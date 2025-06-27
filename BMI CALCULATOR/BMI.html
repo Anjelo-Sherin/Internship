@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="BMIstyle.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BMI Calculator</h1>
+
+   <div class="avatars">
+  <label>
+    <input type="radio" name="gender" value="man">
+    <div class="avatar-wrapper">
+      <img src="https://raw.githubusercontent.com/Anjelo-Sherin/BMI-Calculator/main/man.jpeg" alt="Man" class="avatar">
+      <div class="label">👨 Man</div>
+    </div>
+  </label>
+
+  <label>
+    <input type="radio" name="gender" value="woman">
+    <div class="avatar-wrapper">
+      <img src="https://raw.githubusercontent.com/Anjelo-Sherin/BMI-Calculator/main/women.jpeg" alt="Woman" class="avatar">
+      <div class="label">👩 Woman</div>
+    </div>
+  </label>
+
+  <label>
+    <input type="radio" name="gender" value="kid">
+    <div class="avatar-wrapper">
+      <img src="https://raw.githubusercontent.com/Anjelo-Sherin/BMI-Calculator/main/kid.jpeg" alt="Kid" class="avatar">
+      <div class="label">🧒 Kid</div>
+    </div>
+  </label>
+</div>
+
+  </label>
+</div>
+
+
+    <div class="form-group">
+      <label>Height (in cm):</label>
+      <input type="number" id="height" placeholder="e.g. 170">
+    </div>
+
+    <div class="form-group">
+      <label>Weight (in kg):</label>
+      <input type="number" id="weight" placeholder="e.g. 65">
+    </div>
+
+    <button onclick="calculateBMI()">Calculate BMI</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="BMIscript.js"></script>
+</body>
+</html>
