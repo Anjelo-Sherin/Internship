@@ -1,0 +1,73 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ffe0ec, #ffeaf6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #ffc0cb80;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #d63384;
+}
+
+.dice-area {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.dice {
+  font-size: 60px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dice.roll {
+  animation: roll 0.5s;
+}
+
+@keyframes roll {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+button {
+  background-color: #d63384;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #c2185b;
+}
+
+.history {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.history h2 {
+  color: #d63384;
+}
+
+#rollHistory {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
